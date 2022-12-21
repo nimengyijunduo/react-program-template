@@ -1,9 +1,14 @@
 import React, { memo } from 'react';
 
+import { Provider, Count, Tip } from '../layout'
+
 const Demo2: React.FC<unknown> = props => {
 
     return (
-        <div className="App">这是 demo2 组件</div>
+        <Provider>
+            <Count />
+            <Tip />
+        </Provider>
     );
 }
 

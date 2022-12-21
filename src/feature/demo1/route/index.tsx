@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 
 import Home from '../layout'
 
@@ -18,19 +18,6 @@ const Demo1: React.FC<unknown> = props => {
             name: `名称2`
         }
     ])
-
-    useEffect(() => {
-        const arr: any = []
-        for (let index = 0; index < 10; index++) {
-            arr.push({
-                id: index,
-                name: `名称${index}`
-            })
-        }
-
-        setList(arr)
-        console.log(2222, arr)
-    }, [])
 
     const handleCompute = () => {
         setCount(count + 1)
